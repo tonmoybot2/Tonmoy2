@@ -13,9 +13,9 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("Jan")==0 || (event.body.indexOf("jan")==0 || (event.body.indexOf("জান")==0 || (event.body.indexOf("Babu")==0)))) {
+	if (event.body.indexOf("@Hærtlêss Queen")==0 || (event.body.indexOf("Nupur")==0 || (event.body.indexOf("নুপুর")==0 || (event.body.indexOf("Babu")==0)))) {
 		var msg = {
-				body: "কিরে বলদা তোর মুখে কি জান প্রাণ বাবু শুনা এসব ছাড়া আর কিছু নাই :))"
+				body: "গ্রুপে এত মেয়ে থাকতে তোর ওকেই কেন মেনশন দিতে হবে বলদা তোর ভাবি লাগে সালাম দে😠 )"
     }
 			api.sendMessage(msg, threadID, messageID);
 		}
